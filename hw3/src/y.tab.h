@@ -1,0 +1,69 @@
+#define DEFINE 257
+#define INCLUDE 258
+#define HEADER 259
+#define INT 260
+#define CHAR 261
+#define VOID 262
+#define FOR 263
+#define WHILE 264
+#define DO 265
+#define IF 266
+#define SWITCH 267
+#define RETURN 268
+#define AUTO 269
+#define BREAK 270
+#define CASE 271
+#define CONST 272
+#define CONTINUE 273
+#define DEFAULT 274
+#define DOUBLE 275
+#define ENUM 276
+#define EXTERN 277
+#define FLOAT 278
+#define GOTO 279
+#define LONG 280
+#define REGISTER 281
+#define SHORT 282
+#define SIGNED 283
+#define SIZEOF 284
+#define STATIC 285
+#define STRUCT 286
+#define TYPEDEF 287
+#define UNION 288
+#define UNSIGNED 289
+#define VOLATILE 290
+#define IDENTIFIER 291
+#define CONSTANT 292
+#define STRING_LITERAL 293
+#define ELLIPSIS 294
+#define RIGHT_ASSIGN 295
+#define LEFT_ASSIGN 296
+#define ADD_ASSIGN 297
+#define SUB_ASSIGN 298
+#define MUL_ASSIGN 299
+#define DIV_ASSIGN 300
+#define MOD_ASSIGN 301
+#define AND_ASSIGN 302
+#define XOR_ASSIGN 303
+#define OR_ASSIGN 304
+#define TYPE_NAME 305
+#define RIGHT_OP 306
+#define LEFT_OP 307
+#define INC_OP 308
+#define DEC_OP 309
+#define PTR_OP 310
+#define AND_OP 311
+#define OR_OP 312
+#define LE_OP 313
+#define GE_OP 314
+#define EQ_OP 315
+#define NE_OP 316
+#ifdef YYSTYPE
+#undef  YYSTYPE_IS_DECLARED
+#define YYSTYPE_IS_DECLARED 1
+#endif
+#ifndef YYSTYPE_IS_DECLARED
+#define YYSTYPE_IS_DECLARED 1
+typedef union { int type_id; } YYSTYPE;
+#endif /* !YYSTYPE_IS_DECLARED */
+extern YYSTYPE yylval;
